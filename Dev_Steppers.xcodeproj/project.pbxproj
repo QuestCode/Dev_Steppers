@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		21C245241FEDFFD100E50C5B /* Dev_Steppers.h in Headers */ = {isa = PBXBuildFile; fileRef = 21C245221FEDFFD100E50C5B /* Dev_Steppers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21C2452B1FEDFFDB00E50C5B /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C2452A1FEDFFDB00E50C5B /* extensions.swift */; };
+		21C2452D1FEDFFE400E50C5B /* RoundStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C2452C1FEDFFE400E50C5B /* RoundStepper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21C2451F1FEDFFD100E50C5B /* Dev_Steppers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dev_Steppers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C245221FEDFFD100E50C5B /* Dev_Steppers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dev_Steppers.h; sourceTree = "<group>"; };
 		21C245231FEDFFD100E50C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21C2452A1FEDFFDB00E50C5B /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		21C2452C1FEDFFE400E50C5B /* RoundStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundStepper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		21C245211FEDFFD100E50C5B /* Dev_Steppers */ = {
 			isa = PBXGroup;
 			children = (
+				21C2452C1FEDFFE400E50C5B /* RoundStepper.swift */,
+				21C2452A1FEDFFDB00E50C5B /* extensions.swift */,
 				21C245221FEDFFD100E50C5B /* Dev_Steppers.h */,
 				21C245231FEDFFD100E50C5B /* Info.plist */,
 			);
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					21C2451E1FEDFFD100E50C5B = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C2452D1FEDFFE400E50C5B /* RoundStepper.swift in Sources */,
+				21C2452B1FEDFFDB00E50C5B /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 		21C245281FEDFFD100E50C5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +276,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "devdoesit.Dev-Steppers";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +285,7 @@
 		21C245291FEDFFD100E50C5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
